@@ -1,0 +1,83 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../fonts/Karla.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+:root {
+  --blackish: #2D2D2B;
+  --powder: #F0E4D8;
+  --off-white: #F6F5F0;
+  --off-white-dark: #E3E0D0;
+  --supple: #C39E9E;
+  --faded-pink: #F6F0F1;
+  --blue:#304F6D;
+  --blue-light:#bbcee1;
+  --green:#ace1af;
+  --dark-green:#266829;
+  --sage: #899481;
+  --sage-dark: #586152;
+}
+
+.cover-app {
+  background-color: var(--sage);
+}
+
+.bg{
+  background-color: var(--off-white)
+}
+
+.font-color {
+  color: var(--blackish);
+}
+
+.login-input input, .register-input input {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.login-input button, .register-input button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 8px;
+  font-size: 16px;
+  border: 0;
+  background-color: var(--sage);
+  color: var(--off-white);
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-input button:hover,
+.register-input button:hover {
+  background-color: var(--sage-dark);
+}
+
+.eye:focus{
+  outline: none !important;
+}
+
+.eye:focus-within{
+  outline: none !important;
+}
